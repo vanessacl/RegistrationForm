@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap');
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Yusei Magic', sans-serif;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    min-height: 100vh;
+    padding: 0;
+    overflow: auto;
+}
+
+.container {
+    background-color: #fff;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgb(208, 170, 250), rgb(38, 44, 99));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(50, 9, 88);
+}
+
+.form {
+    height: 100%;
+}
+
+.input {
+    border-radius: 10px;
+    background: rgba(184, 173, 247, 0.1);
+}
+
+.button-bottom {
+    background: hsl(266, 61%, 33%);
+    color: #fff;
+    border: none;
+    font-size: .85rem;
+    padding: 7px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+.small-text {
+    font-size: .75rem;
+    text-align: center;
+    color: hsl(270, 2%, 18%);
+}
+
+@media(max-width:767px) {
+    .reverseOrder {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .welcome {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+/* --------- Styles for CreateAccount.cshtml ----------*/
+
+.VerifyEmail {
+    position: relative;
+}
+
+.VerifyEmail div {
+    font-style: italic;
+    font-size: .7rem;
+    text-align: right;
+    padding-top: 2px;
+    display: none;
+}
+
+.VerifyEmail .checkmark-icon {
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    display: none;
+}
+
+.VerifyEmail .error-icon {
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    display: none;
+}
+
+.activate {
+    display: block !important;
+}
