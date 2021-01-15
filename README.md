@@ -9,4 +9,4 @@ Registration form for new clients (beauty salon website)
   - jQuery
   
   
-  <img src="img/screenshot.png" width= "450">
+  <img src="img/screenshot.PNG" width= "450">
